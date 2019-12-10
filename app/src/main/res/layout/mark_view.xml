@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_square"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent"
+        android:layout_width="50dp"
+        android:layout_height="50dp"></TextView>
+    <ImageView
+        android:id="@+id/img"
+        android:src="@mipmap/img"
+        android:layout_width="100dp"
+        android:layout_height="80sp"></ImageView>
+</LinearLayout>
