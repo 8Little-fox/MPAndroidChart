@@ -1,7 +1,7 @@
 # MPAndroidChart
 
 
-#Grdle配置：
+# Grdle配置：
 ```
 repositories {
    maven { url "https://jitpack.io" }
@@ -11,7 +11,7 @@ dependencies {
 }
 ```
 
-* x轴轴线
+*  x轴轴线
 ```
 xAxis.setPosition(XAxis.XAxisPosition.BOTTOM); 设置x轴线位于底部
 xAxis.setTextColor(Color.BLACK); 设置文本颜色
@@ -22,7 +22,7 @@ xAxis.setGranularity(1); //数据的间隔
 xAxis.setLabelCount(5,true);//坐标轴的数据有几个
 xAxis.setEnabled(true); 是否显示线
 ```
-#LineChart 线型图 布局:
+# LineChart 线型图 布局:
 
 ```
  <com.github.mikephil.charting.charts.LineChart
@@ -31,7 +31,7 @@ xAxis.setEnabled(true); 是否显示线
         android:layout_height="400dp">
     </com.github.mikephil.charting.charts.LineChart>
 ```
-#添加数据
+# 添加数据
 ```
 public LineData initData(){
         List<Entry> entries=new ArrayList<>();
@@ -46,4 +46,18 @@ public LineData initData(){
         
         return lineData;
     }
+    
+```
+# 设置颜色
+
+```
+set.setColors(ColorTemplate.JOYFUL_COLORS);
+```
+# 两个模块之间的距离
+```
+set.setSliceSpace(10);
+```
+# 内透明圆环
+```
+pieChart.setTransparentCircleRadius(0);
 ```
